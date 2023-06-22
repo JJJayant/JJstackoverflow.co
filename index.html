@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the world to develop technology through collective effort</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="wholenav">
+
+        <div class="pogo" >
+            <img src="logo.png" alt=""> 
+        </div>
+
+        <nav class="navbar">
+            
+            <div class="hamburger" id="ham1">
+                <div id="menu" class="mena" onclick="onClickMenu()">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
+            </div>
+            
+            <ul class="navlist" id="navkilist">
+                <div class="logo" id="primlogo" style="padding-top: 0px;">
+                    <img src="logo.png" alt=""> 
+                </div>
+                
+                <li id="ourprod"  onmouseover="onClickMenu2()" style="transition: 0.3s ease;" >Our products
+                    <span class="material-symbols-outlined" >expand_more</span>
+                </li>
+                 <li id="ourcomp" onmouseover="compfunc()" style="transition: 0.3s ease;" >  Our Company
+                    <span class="material-symbols-outlined"  >expand_more</span>
+                </li>
+                <li style=" transform: translateY(5px); transition: 0.3s ease;"><a href="https://stackoverflow.co/company/careers/">Careers</a></li>
+                <li style=" transform: translateY(5px);"><a href="https://stackoverflow.co/company/work-here/">Open positions</a></li>
+                <div style="flex-grow: 4;color: white; "></div>
+                <li id="ourfollow" onmouseover="followfunc()" style="color: black; justify-self: end;transition: 0.3s ease;">Follow Us
+                    <span class="material-symbols-outlined" >expand_more </span>
+                </li>
+                <div class="contact" style="margin-left: 5px;">
+                    <a href="https://stackoverflow.co/company/contact/">
+                    Contact
+                    </a>
+                </div>
+
+                
+            </ul>
+
+            
+            <div class="hamburger" id="ham2">
+                <div id="menu2" class="mena" onclick="showme()">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
+            </div>
+        </nav>
+    <div id="prod" onmouseleave="hide()">
+    
+    <div class="produp">
+            <a href="https://stackoverflow.co/labs" >
+                <div class="part1">
+                    <img src="labs.png" alt="labs" style="height:30px;">
+                </div>
+                
+                <div class="new" >
+                        NEW
+                    </div>
+                    <div class="random" style="padding-left: 10px;">
+                        Where Stack Overflow explores the future of knowledge sharing
+                    </div>
+                    <div class="find" >
+                        Find Out More
+                    </div>
+            </a>
+        </div>
+        
+        <div class="proddown">
+            <div class="dabba1" style="border-right: 1px solid rgba(0, 0, 0, 0.246);">
+                <div class="dhead" >Enable your organization</div>
+                <div class="infobox" style="display: flex;">
+                    <img src="teams.png" alt="">
+                    <div class="textinfo">
+                        <div class="info1">
+                            Stack Overflow for Teams
+                        </div>
+                        <div class="info2">
+                            Where developers and technologists share private knowledge with coworkers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dabba2" style="border-right: 1px solid rgba(0, 0, 0, 0.246);">
+                <div class="dhead">Connect with your community</div>
+                <div class="infobox" style="display: flex;">
+                    <img src="talent.png" alt="">
+                    <div class="textinfo">
+                        <div class="info1">
+                            Stack Overflow Talent
+                        </div>
+                        <div class="info2">
+                            Where developers and technologists share private knowledge with coworkers.
+                        </div>
+                    </div>
+                </div>
+                <div class="infobox" style="display: flex;">
+                    <img src="Advertising.png" alt="">
+                    <div class="textinfo">
+                        <div class="info1">
+                            Stack Overflow Advertising
+                        </div>
+                        <div class="info2">
+                            Where developers and technologists share private knowledge with coworkers.
+                        </div>
+                    </div>
+                </div>
+                <div class="infobox" style="display: flex;">
+                    <img src="collect.png" alt="">
+                    <div class="textinfo">
+                        <div class="info1">
+                            Collectives™ on Stack Overflow
+                        </div>
+                        <div class="info2">
+                            Where developers and technologists share private knowledge with coworkers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dabba3" >
+                <div class="dhead">Join the community</div>
+                <div class="infobox" style="display: flex;">
+                    <img src="logoimg.png" alt="">
+                    <div class="textinfo">
+                        <div class="info1">
+                            Stack Overflow for Teams
+                        </div>
+                        <div class="info2">
+                            Where developers and technologists share private knowledge with coworkers.
+                        </div>
+                    </div>
+                </div>
+                <div class="infobox" style="display: flex;">
+                    <img src="exchange.png" alt="">
+                    <div class="textinfo">
+                        <div class="info1">
+                            Stack Overflow for Teams
+                        </div>
+                        <div class="info2">
+                            Where developers and technologists share private knowledge with coworkers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="company"  onmouseleave="hide2()" style="transition: 0.6s ease-in;">
+        <div class="comp"><a href="https://stackoverflow.co/company/leadership/">Leadership</a></div>
+        <div class="comp"><a href="https://stackoverflow.co/company/press/">Press</a></div>
+        <div class="comp"><a href="https://stackoverflow.co/company/research/">Research</a></div>
+        <div class="comp"><a href="https://stackoverflow.co/company/social-impact/">Social Impact</a></div>
+    </div>
+    
+    <div id="follow" onmouseleave="hide3()">
+        <div class="comp"><a href="https://stackoverflow.blog/">Blog<span class="material-symbols-outlined" style="height: 5px;">
+            open_in_new
+        </span></a></div>
+        <div class="comp"><a href="https://stackoverflow.blog/podcast/">Podcast<span class="material-symbols-outlined" style="height: 5px;">
+            open_in_new
+</span></a></div>
+<div class="comp"><a href="https://stackoverflow.blog/newsletter/">Newsletter<span class="material-symbols-outlined" style="height: 5px;">
+    open_in_new
+</span></a></div>
+</div>
+</div>
+
+<div class="section1" >
+    <div class="sec1l">
+        <img src="back.png" alt="">
+    </div>
+        <div class="sec1r">
+            <h2 style="font-weight: 400;">Who are we</h2>
+            <h1>Empowering the world to develop technology through collective knowledge.</h1>
+            <h3>Our public platform <span>serves 100 million people every month</span>, making it one of the most popular websites in the world.
+                <br><br>
+                Our asynchronous knowledge management and collaboration offering,<span> Stack Overflow for Teams</span>, is transforming how people work.</h3>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="sec">
+            <div style="display: block; font-weight: 600;">100+ million</div>
+           <div> Monthly visitors to our network</div>
+        </div>
+        <div class="sec">
+            <div style="display: block; font-weight: 600;">21+ million</div>
+            Questions asked to-date
+        </div>
+        <div class="sec">
+            <div style="display: block; font-weight: 600;">13.6 seconds</div>
+            Average time between new questions
+        </div>
+        <div class="sec">
+            <div style="display: block; font-weight: 600;">50.6+ billion</div>
+            Times a developer got help
+        </div>
+        <div class="sec">
+            <div style="display: block; font-weight: 600;">10,000+</div>
+            Customer companies for all products
+        </div>
+    </div>
+    <div class="section3" style="font-size: 1.3em;">
+        <div class="s3l">
+            Stack Overflow helps people find the answers they need, when they need them. We're best known for our public Q&A platform that over 100 million people visit every month to ask questions, learn, and share technical knowledge.
+        </div>
+        <div class="s3r">
+            Our products and tools empower people to find what they need to develop technology at work or at home. These products include,<a href="https://stackoverflow.co/teams">Stack Overflow for Teams</a> , <a href="https://stackoverflow.co/advertising">Stack Overflow Advertising </a>,<a href="https://stackoverflow.co/collectives"> Collectives™ on Stack Overflow</a>, and <a href="https://stackoverflow.co/talent">Stack Overflow Talent</a>.
+        </div>
+    </div>
+    <div class="section3">
+        <div class="im">
+            <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/30b5fc47c5661a2053fffa8b95e69cd9b1341fc7-120x116.png?h=128&auto=format" alt="Image">
+            <div class="awardname">APPEALIE SaaS Awards</div>
+            Collaboration + Productivity
+            <br>
+            2021
+        </div>
+        <div class="im">
+            <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/d7e31d9595e643cb08659a76e850b19ab3f6815d-313x287.svg?h=128&auto=format" alt="Image">
+            <div class="awardname">RemoteTech Awards</div>
+            Developer Collaboration Platform
+            <br>
+            2021-2022
+        </div>
+        <div class="im">
+            <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/0eb8697fbe3ece880b152ebb157f61efa2b3b256-491x331.svg?h=128&auto=format" alt="Image">
+            <div class="awardname">The SaaS Awards</div>
+             Best SaaS for Productivity
+            <br>
+            2022 
+        </div>
+        <div class="im">
+            <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/469b4cabfc967ee1f748a23eee120f15571a712f-771x451.png?h=128&auto=format" alt="Image">
+            <div class="awardname">Webby</div>
+            The Best of the Internet
+            <br>
+            2021
+        </div>
+    </div>
+    <div class="section4" style="font-weight: 900;font-size:1.8em;text-align:  center; padding: 5vh;">Our Products</div>
+    <div class="section5" >
+        <img src="logoimg.png" alt="image">
+        <h3>Our Public Platform</h3>
+        <div style="font-size: 1.2em;">Where developers and technologists go to gain and share knowledge</div>
+        <span id="part">Participate
+                <span class="material-symbols-outlined" style="transform: translateY(2px);">
+                    open_in_new
+                </span>
+        </span>
+    </div>
+
+    <div class="section6">
+        <div class="s6l" >
+                <div class="left-text">
+                    <div class="s6top">
+                    <img src="logoimg.png" alt="Image" style="height: 40px;padding: 10px;">
+                    <h3>FOR TEAMS</h3>
+                </div>
+                <div class="textbox">Where developers and technologists share private knowledge with coworkers</div>
+                <span id="part">Learn More
+                    
+                </span>
+             </div>
+             <div class="right-img">
+                <img src="blueimg1.png" alt="" style="width: 100%;">
+             </div>
+        </div>
+        <div class="s6r">
+            <div class="left-text">
+                <div class="s6top">
+                    <img src="logoimg.png" alt="Image" style="height: 40px;padding: 10px;">
+                    <h3>TALENT</h3>
+                </div>
+                <div class="textbox">Where companies build their employer brand to attract top tech talent</div>
+                <span id="part">
+                    Learn More     
+                 </span>
+            </div>
+            <div class="right-img">
+                <img src="soft.png" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <div class="section7">
+        <div class="s7l"  >
+            <div class="left-text">
+                <div class="s7top">
+                <img src="logoimg.png" alt="Image" style="height: 40px;padding: 10px;">
+                <h3>ADVERTISING</h3>
+            </div>
+            <div class="textbox"> Where companies reach the world’s largest audience of developers and technologists.</div>
+            <span id="part">Learn More
+                
+            </span>
+        </div>
+        <div class="right-img">
+            <img src="blueimg3.png" alt="" style="width: 100%;">
+        </div>
+    </div>
+    <div class="s7r">
+        <div class="left-text">
+            <div class="s7top">
+                <img src="logoimg.png" alt="Image" style="height: 40px;padding: 10px;">
+                <h3>COLLECTIVE</h3>
+            </div>
+            <div class="textbox">Where developer communities connect with the specific technologies they use the most.</div>
+            <span id="part">Learn More
+                
+        </span>
+        </div>
+        <div class="right-img">
+            <img src="blueimg4.png" alt="" style="width: 100%;">
+        </div>
+   </div>
+   </div>
+    
+   <div class="section8" style="padding-top: 5vh;">
+    <h4 style="color: rgba(0, 0, 0, 0.436); text-align: center;">Used by thousands of organizations around the globe</h4>
+   </div>
+
+   <div class="logos">
+    <div class="logos-slide">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/a96001cdcd0d4a56b88c6452e77b0a6efe387a9d-192x41.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/b90ff39d33a71c10861c70f5feab093cafb5d230-155x47.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/6b3daf9ee3910d99348126c9fe4435909c18cd39-151x66.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/0b8428147651a934888f818b26db3044daa62f20-139x43.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/7795d036597430c7825f03a40b35ab53b92c39b3-102x55.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/87f6a35b5b34b08e293d965b8aca21f4b1a4f885-123x28.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/acdc9477bbb591618777d6464cb7412fcdb3edc1-165x41.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/bf99da124792539fa71dba0a06a8f0afcef3743e-313x70.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/83a2ce7a80f20c5b78c941d5acf57624548691dd-217x40.svg?auto=format" alt="" style="height: 40px;">
+    </div>
+    <div class="logos-slide">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/a96001cdcd0d4a56b88c6452e77b0a6efe387a9d-192x41.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/b90ff39d33a71c10861c70f5feab093cafb5d230-155x47.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/6b3daf9ee3910d99348126c9fe4435909c18cd39-151x66.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/0b8428147651a934888f818b26db3044daa62f20-139x43.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/7795d036597430c7825f03a40b35ab53b92c39b3-102x55.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/87f6a35b5b34b08e293d965b8aca21f4b1a4f885-123x28.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/acdc9477bbb591618777d6464cb7412fcdb3edc1-165x41.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/bf99da124792539fa71dba0a06a8f0afcef3743e-313x70.svg?auto=format" alt="" style="height: 40px;">
+        <img src="https://cdn.stackoverflow.co/images/jo7n4k8s/production/83a2ce7a80f20c5b78c941d5acf57624548691dd-217x40.svg?auto=format" alt="" style="height: 40px;">
+    </div>
+   </div>
+
+   <div class="section9" style="padding-top: 5vh;">
+    <h2 style="color: rgba(0, 0, 0, 0.779); text-align: center;">Our core values</h2>
+   </div>
+
+   <div class="section10">
+    <div class="s10box">
+        <img src="adopt.png" alt="image">
+        <h3>Adopt a customer-first mindset</h3>
+        <h4>Authentically serve our customers by empowering, listening, and collaborating with our fellow Stackers.</h4>
+    </div>
+    <div class="s10box">
+        <img src="flexible.png" alt="image" style="height: 55px;">
+        <h3>Be flexible and inclusive</h3>
+        <h4>We do our best work when a diverse group of people collaborate in an environment of respect and trust. Create space for different voices to be heard, and allow flexibility in how people work.</h4>
+    </div>
+    <div class="s10box">
+        <img src="trans.png" alt="image"style="height: 55px;">
+        <h3>Be transparent</h3>
+        <h4>Communicate openly and honestly, both inside and outside the company. Encourage transparency from others by being empathetic, reliable, and acting with integrity.</h4>
+    </div>
+    <div class="s10box">
+        <img src="emp.png" alt="image"style="height: 55px;">
+        <h3>Empower people to deliver outstanding results</h3>
+        <h4>Give people space to get their job done, support them when they need it, and practice blameless accountability.</h4>
+    </div>
+    <div class="s10box">
+        <img src="comm.png" alt="image"style="height: 55px;">
+        <h3>Keep community at our center</h3>
+        <h4>Community is at the heart of everything we do. Nurture healthy communities where everyone is encouraged to learn and give back.</h4>
+    </div>
+    <div class="s10box">
+        <img src="learn.png" alt="image"style="height: 55px;">
+        <h3>Learn, share, grow</h3>
+        <h4>Adopt a Growth Mindset. Be curious and eager to learn. Aim for ethical, sustainable, long-term growth, both personally and in the company.</h4>
+    </div>
+   </div>
+
+   <div class="section11">
+         <div class="inside">
+
+              <h2>Where we work</h2>
+             <h4>We’re proud to be a remote first company working across many timezones.</h4>
+         <div class="buttons">
+
+            <a href="https://stackoverflow.co/company/work-here"><span class="current">Current job openings</span></a>
+            <a href="https://stackoverflow.co/company/contact"><span class="contactus">Contact us</span></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="section12" onmouseleave="changeback()">
+        <div class="s12box" onmouseover="change1()">
+            <img src="check.png" alt="" id="check">
+            <h3>Check out our FAQ about how Stack Overlflow works</h3>
+            <span>Get Help</span>
+        </div>
+        <div class="s12box" onmouseover="change2()">
+            <img src="meta.png" alt="" id="meta" style="height: 100px;width: 100px;">
+            <h3>To share feedback about our platform, please visit our meta community</h3>
+            <span>Visit Meta</span>
+        </div>
+        <div class="s12box" onmouseover="change3()">
+            <img src="look.png" alt="" id="look">
+            <h3>Looking for help with Stack Overflow for Teams?</h3>
+            <span>Teams help</span>
+        </div>
+    </div>
+
+    <div class="section13">
+        <div class="s13l">
+            <img src="logoimg.png" alt="">
+
+        </div>
+        <div class="s13r">
+            <div  class="headings">STACK OVERFLOW</div>
+            <div class="headings">PRODUCTS</div>
+            <div class="headings">POLICIES</div>
+            <div class="headings">CHANNELS</div>
+            <div><a href="https://stackoverflow.co/">About</a></div>
+            <div><a href="https://stackoverflow.co/teams/">Teams</a></div>
+            <div><a href="https://stackoverflow.com/legal/terms-of-service">Legal</a></div>
+            <div><a href="https://stackoverflow.blog/">Blog</a></div>
+            <div><a href="https://stackoverflow.co/company/press/">Press</a></div>
+            <div><a href="https://stackoverflow.co/advertising/">Advertising</a></div>
+            <div><a href="https://stackoverflow.com/legal/privacy-policy/">Privacy Policy</a></div>
+            <div><a href="https://stackoverflow.blog/podcast/">Podcast</a></div>
+            <div><a href="https://stackoverflow.co/company/work-here/">Work here</a></div>
+            <div><a href="">Collectives</a></div>
+            <div><a href="">Terms of Service</a></div>
+            <div><a href="">Newsletter</a></div>
+            <div><a href="">Contact Us</a></div>
+            <div><a href="">Talent</a></div>
+            <div><a href="">Cookie Settings</a></div>
+            <div><a href="">Twitter</a></div>
+            <div><a href="">Questions</a></div>
+            <div><a href=""></a></div>
+            <div><a href="">Cookie Policy</a></div>
+            <div><a href="">LinkedIn</a></div>
+            <div><a href=""></a></div>
+            <div><a href=""></a></div>
+            <div><a href=""></a></div>
+            <div><a href="">Instagram</a></div>
+        </div>
+    </div>
+</body>
+<script>
+    let b=1;
+    document.getElementById("menu").classList.toggle("icon");
+
+    function onClickMenu()
+    {
+        document.getElementById("menu").classList.toggle("icon");
+        let a=document.getElementById("prod");
+        b=b+1;
+        let k1=document.getElementById("follow");
+        k1.style.display="none";
+        let k2=document.getElementById("company");
+        k2.style.display="none";
+        if(b%2==1)
+        {
+            a.style.display="block";
+        }
+        else
+        {
+            a.style.display="none";
+        }
+        
+    }
+    function onClickMenu2()
+    {
+        let a=document.getElementById("prod");
+        // a.style.display="block";
+        if(b%2==0)
+        {
+            b=b+1;
+            document.getElementById("menu").classList.toggle("icon");
+            a.style.display="block";
+        }
+        let k1=document.getElementById("follow");
+        k1.style.display="none";
+        let k2=document.getElementById("company");
+        k2.style.display="none";
+        // else
+        // {
+        //     a.style.display="none";
+        // }
+    }
+    if(b%2==1)
+    {
+        hide();
+    }
+    function hide()
+    {
+        document.getElementById("menu").classList.toggle("icon");
+        let a=document.getElementById("prod");
+        a.style.display="none";
+        b=b+1;
+    }
+    let j=1;
+    function showme(){
+        document.getElementById("menu2").classList.toggle("icon");
+        let a=document.getElementById("navkilist");
+        j=j+1;
+        
+        if(j%2==0)
+        {
+            let h=document.getElementById("primlogo");
+            h.style.display="none";
+            a.style.display="block";
+        }
+        else
+        {
+            a.style.display="none";
+            let k1=document.getElementById("follow");
+        k1.style.display="none";
+        let k4=document.getElementById("company");
+        k4.style.display="none";
+        let i=document.getElementById("prod");
+        i.style.display="none";
+
+
+        }
+
+    }
+    function compfunc()
+    {
+        let a=document.getElementById("company");
+        a.style.display="flex";
+        if(b%2==1)
+        {
+
+            document.getElementById("menu").classList.toggle("icon");
+            let c=document.getElementById("prod");
+            c.style.display="none";
+            b=b+1;
+        }
+        let k1=document.getElementById("follow");
+        k1.style.display="none";
+    }
+    function hide2()
+    {
+        let a=document.getElementById("company");
+        a.style.display="none";
+        if(b%2==1)
+        {
+
+            document.getElementById("menu").classList.toggle("icon");
+            let c=document.getElementById("prod");
+            c.style.display="none";
+            b=b+1;
+        }
+    }
+    function followfunc()
+    {
+        let a=document.getElementById("follow");
+        a.style.display="flex";
+        if(b%2==1)
+        {
+
+            document.getElementById("menu").classList.toggle("icon");
+            let c=document.getElementById("prod");
+            c.style.display="none";
+            b=b+1;
+        }
+        let k2=document.getElementById("company");
+        k2.style.display="none";
+    }
+function hide3()
+{
+    let a=document.getElementById("follow");
+    a.style.display="none";
+    if(b%2==1)
+    {
+
+        document.getElementById("menu").classList.toggle("icon");
+        let c=document.getElementById("prod");
+        c.style.display="none";
+        b=b+1;
+    }
+}
+function change1()
+{
+    let k=document.getElementById("check");
+    k.setAttribute("src", "checkhov.png");
+    
+    let k2=document.getElementById("meta");
+    k2.setAttribute("src", "meta.png");
+    
+    let k3=document.getElementById("look");
+    k3.setAttribute("src", "look.png");
+    
+}
+function change2()
+{
+    let k1=document.getElementById("check");
+    k1.setAttribute("src", "check.png");
+    let k=document.getElementById("meta");
+    k.setAttribute("src", "metahov.png");
+    let k3=document.getElementById("look");
+    k3.setAttribute("src", "look.png");
+}
+function change3()
+{
+    let k1=document.getElementById("check");
+    k1.setAttribute("src", "check.png");
+    let k2=document.getElementById("meta");
+    k2.setAttribute("src", "meta.png");
+    let k=document.getElementById("look");
+    k.setAttribute("src", "lookhov.png");
+}
+function changeback()
+{
+    let k1=document.getElementById("check");
+    k1.setAttribute("src", "check.png");
+    let k2=document.getElementById("meta");
+    k2.setAttribute("src", "meta.png");
+    
+    let k3=document.getElementById("look");
+    k3.setAttribute("src", "look.png");
+    
+
+}
+</script>
+</html>
